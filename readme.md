@@ -77,7 +77,14 @@ sudo nmap -v -sU -T4 -Pn --top-ports 100 -oA top_100_UDP_192.168.0.1 192.168.0.1
 sudo nmap -v -sS  -Pn --script vuln --script-args=unsafe=1 -oA full_vuln_scan_192.168.0.1 192.168.0.1
 ```
 
-### Thats That. The rest is boring
+### Open MetaSpoilt
+#### After finding vulnerabilities from Full Vuln Scan (above)
+
+```bash
+sudo msfconsole
+```
+
+# Thats That. The rest is boring
 
 
 **THIS IS WORK IN PROGRESS**
