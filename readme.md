@@ -61,6 +61,22 @@ enum4linux [IP]
 ```
 
 
+### Searchsploit
+
+```bash
+sudo searchspoilt [Whatever]
+```
+ 
+#### How to use it
+
+```bash
+nano /usr/share/exploitdb/exploits/whatever
+
+OR
+
+cat /usr/share/exploitdb/exploits/whatever
+```
+
 **THIS IS WORK IN PROGRESS**
 
 gcc -m32 -Wl,--hash-style=both -o exploit 18411.c 
