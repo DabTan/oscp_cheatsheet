@@ -56,25 +56,25 @@ Personel:
 ### Initial Fast TCP Scan
 
 ```bash
-sudo nmap -v -sS -sV -Pn --top-ports 1000 -oA initial_scan_192.168.0.1 192.168.0.1
+sudo nmap -v -sS -sV -Pn --top-ports 1000 -oA initial_scan_192.168.0.1 10.10.10.xxx
 ```
 
 ### Full TCP Scan
 
 ```bash
-sudo nmap -v -sS -Pn -sV -p 0-65535 -oA full_scan_192.168.0.1 192.168.0.1
+sudo nmap -v -sS -Pn -sV -p 0-65535 -oA full_scan_192.168.0.1 10.10.10.xxx
 ```
 
 ### Top 100 UDP Scan
 
 ```bash
-sudo nmap -v -sU -T4 -Pn --top-ports 100 -oA top_100_UDP_192.168.0.1 192.168.0.1
+sudo nmap -v -sU -T4 -Pn --top-ports 100 -oA top_100_UDP_192.168.0.1 10.10.10.xxx
 ```
 
 ### Full Vulnerability scan
 
 ```bash
-sudo nmap -v -sS  -Pn --script vuln --script-args=unsafe=1 -oA full_vuln_scan_192.168.0.1 192.168.0.1
+sudo nmap -v -sS  -Pn --script vuln --script-args=unsafe=1 -oA full_vuln_scan_192.168.0.1 10.10.10.xxx
 ```
 
 ### Open MetaSpoilt
