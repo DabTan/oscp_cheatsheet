@@ -42,11 +42,11 @@ sudo msfconsole
 search[ms...] , use [num] , show options , set , use
 ```
 
-# If Cannot find Vulneriblities in Vuln Scan.....
+### If Cannot find Vulneriblities in Vuln Scan.....
 
-### Samba
+#### Samba
 
-#### Through the Initial and Full scan, if port 139 or 445 is found(samba)
+##### Through the Initial and Full scan, if port 139 or 445 is found(samba)
 
 ```bash
 smbclient -L [IP]
