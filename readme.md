@@ -60,6 +60,11 @@ smbmap -H [IP]
 enum4linux [IP]
 ```
 
+##### With samba, u can.....
+
+```bash
+python psexec.py 'username:passwd@IP'
+```
 
 ### Searchsploit
 
