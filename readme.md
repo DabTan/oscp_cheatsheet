@@ -36,8 +36,29 @@ sudo nmap -v -sS  -Pn --script vuln --script-args=unsafe=1 -oA full_vuln_scan_19
 ```bash
 sudo msfconsole
 ```
+#### Then.....
 
-# Thats That. The rest is boring
+```bash
+search[ms...] , use [num] , show options , set , use
+```
+
+# If Cannot find Vulneriblities in Vuln Scan.....
+
+### Samba
+
+#### Through the Initial and Full scan, if port 139 or 445 is found(samba)
+
+```bash
+smbclient -L [IP]
+```
+
+```bash
+smbmap -H [IP]
+```
+
+```bash
+enum4linux [IP]
+```
 
 
 **THIS IS WORK IN PROGRESS**
