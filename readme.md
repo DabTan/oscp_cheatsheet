@@ -111,10 +111,10 @@ systeminfo
 ```bash
 wget [your ip]:[port]/file
 ```
-#### chamod
+#### chmod
 
 ```bash
-chamod 777 [file]
+chmod 777 [file]
 ```
 
 
