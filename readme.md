@@ -82,6 +82,12 @@ OR
 cat /usr/share/exploitdb/exploits/whatever
 ```
 
+### PE (Privillege Escalation)
+
+```bash
+use post/multi/recon/local_exploit_suggester
+```
+
 #### Granny
 
 ```bash
