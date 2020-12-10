@@ -95,6 +95,19 @@ curl -X PUT http://10.10.10.15/_vti_log/reverse10.txt --data-binary @reverse.asp
 ```
 
 
+### Linux and windows version
+
+#### Linux
+```bash
+uname -a
+```
+
+#### Windows
+```bash
+systeminfo
+```
+
+
 **THIS IS WORK IN PROGRESS**
 
 gcc -m32 -Wl,--hash-style=both -o exploit 18411.c 
