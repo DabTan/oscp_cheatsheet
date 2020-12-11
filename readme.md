@@ -123,6 +123,11 @@ chmod 777 [file]
 python3 -m http.server [port]
 ```
 
+#### Open NetCat (Listen to port)
+
+```bash
+nc -nlvp [port]
+```
 
 **THIS IS WORK IN PROGRESS**
 
