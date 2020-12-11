@@ -117,6 +117,12 @@ wget [your ip]:[port]/file
 chmod 777 [file]
 ```
 
+#### Opening a HTTP service on a port
+
+```bash
+python3 -m http.server [port]
+```
+
 
 **THIS IS WORK IN PROGRESS**
 
