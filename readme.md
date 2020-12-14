@@ -133,6 +133,12 @@ python3 -m http.server [port]
 nc -nlvp [port]
 ```
 
+### How to compile .c files
+
+```bash
+gcc whatever.c
+```
+
 **THIS IS WORK IN PROGRESS**
 
 gcc -m32 -Wl,--hash-style=both -o exploit 18411.c 
