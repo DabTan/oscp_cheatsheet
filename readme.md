@@ -29,6 +29,20 @@ sudo nmap -v -sU -T4 -Pn --top-ports 100 -oA top_100_UDP_192.168.0.1 10.10.10.xx
 ```bash
 sudo nmap -v -sS  -Pn --script vuln --script-args=unsafe=1 -oA full_vuln_scan_192.168.0.1 10.10.10.xxx
 ```
+### Gobuster
+
+#### Fast Scan (Big List)
+
+```bash
+gobuster dir -e -u http://192.168.0.1 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 20
+```
+
+#### Slow Scan (Check File Extensions)
+```bash
+gobuster dir -e -u http://192.168.0.1 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,html,cgi,sh,bak,aspx -t 20
+```
+
+
 
 ### Open MetaSpoilt
 #### After finding vulnerabilities from Full Vuln Scan (above)
