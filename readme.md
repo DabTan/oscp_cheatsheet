@@ -41,8 +41,10 @@ gobuster dir -e -u http://192.168.0.1 -w /usr/share/wordlists/dirbuster/director
 ```bash
 gobuster dir -e -u http://192.168.0.1 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,html,cgi,sh,bak,aspx -t 20
 ```
-
-
+#### add......
+```bash
+'200,204,301,302,307,403,500'
+```
 
 ### Open MetaSpoilt
 #### After finding vulnerabilities from Full Vuln Scan (above)
