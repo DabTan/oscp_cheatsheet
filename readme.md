@@ -43,7 +43,7 @@ gobuster dir -e -u http://192.168.0.1 -w /usr/share/wordlists/dirbuster/director
 ```
 #### add......
 ```bash
-'200,204,301,302,307,403,500' -k
+-s '200,204,301,302,307,403,500' -k
 ```
 
 ### Open MetaSpoilt
