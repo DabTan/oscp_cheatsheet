@@ -46,6 +46,13 @@ gobuster dir -e -u http://192.168.0.1 -w /usr/share/wordlists/dirbuster/director
 -s '200,204,301,302,307,403,500' -k
 ```
 
+### If you have found a DNS Server..........
+#### Do this command for hostname
+```bash
+dig axfr bank.htb @[IP]
+```
+
+
 ### Open MetaSpoilt
 #### After finding vulnerabilities from Full Vuln Scan (above)
 
