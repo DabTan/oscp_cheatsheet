@@ -161,6 +161,20 @@ nc -nlvp [port]
 ```bash
 gcc whatever.c
 ```
+### Check what server is listening to
+
+#### Windows
+
+```bash
+netstat -ano
+```
+
+#### Linux 
+
+```bash
+netstat -tulpn
+```
+
 
 **THIS IS WORK IN PROGRESS**
 
