@@ -193,6 +193,17 @@ list (list emails)
 retr [num] (READ)
 dele [NUM] (DELETE)
 ```
+### SSH escape restricted shell
+
+https://www.sans.org/blog/escaping-restricted-linux-shells/
+
+
+```bash
+ ssh [usr]@[IP] -t "bash --noprofile"
+```
+
+
+
 **THIS IS WORK IN PROGRESS**
 
 gcc -m32 -Wl,--hash-style=both -o exploit 18411.c 
