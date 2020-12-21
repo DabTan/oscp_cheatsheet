@@ -202,7 +202,16 @@ https://www.sans.org/blog/escaping-restricted-linux-shells/
  ssh [usr]@[IP] -t "bash --noprofile"
 ```
 
+### SQL Injection
 
+```bash
+gabriel' or 1=1 LIMIT 1;--
+
+OR
+
+gabriel' or 1=1 LIMIT 1;#
+
+```
 
 **THIS IS WORK IN PROGRESS**
 
